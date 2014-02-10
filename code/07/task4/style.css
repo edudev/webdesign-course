@@ -1,0 +1,7 @@
+* { margin: 0; padding: 0; }
+li { list-style-type: none; }
+a { text-decoration: none; color: inherit; }
+nav { overflow: hidden; }
+nav > ul > li { float: left; background-color: #eee; padding: 10px; margin: 10px 5px; }
+nav > ul > li:first-child { margin-left: 10px; }
+nav > ul > li:last-child { margin-right: 10px; }

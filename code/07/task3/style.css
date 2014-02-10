@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; }
+header, footer, .body .wrapper { padding: 10px; background-color: #eee; }
+header, footer, .body { margin: 10px; }
+.body > .sidebar:first-child > .wrapper { margin-right: 10px }
+.body > .sidebar:last-child > .wrapper { margin-left: 10px }
+.body { overflow: hidden; }
+.body > .content, .body > .sidebar { float: left; }
+.body > .sidebar:first-child { width: 20%; }
+.body > .content { width: 65%; }
+.body > .sidebar:last-child { width: 15%; }
