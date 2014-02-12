@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0; }
+
+.gallery img { width: 200px; }
+.gallery li { display: block; float: left; margin: 10px; }
+.gallery li:nth-child(4n+1) { clear: both; }
+/*
+.gallery li:first-child + li + li + li + li + li + li + li + li + li + li + li + li,
+.gallery li:first-child + li + li + li + li + li + li + li + li,
+.gallery li:first-child + li + li + li + li { clear: both; }
+*/
