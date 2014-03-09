@@ -1,0 +1,17 @@
+* { margin: 0; padding: 0; }
+.right { text-align: right; }
+
+body { padding: 20px; }
+.wrapper { width: 900px; margin: 0 auto; }
+form fieldset { padding: 10px; }
+form h1, form h2 { text-transform: uppercase; text-align: center; padding: 10px; }
+form h2 {  }
+
+form p { padding: 5px; }
+form p.oneline + p.description { padding-left: 5em; }
+form .oneline { position: relative; padding: 5px; }
+form .oneline > label { display: inline-block; }
+form .oneline > input, form .oneline > span { display: inline-block; position: absolute; right: 0; }
+form ol { list-style-type: decimal; padding-left: 1.5em; }
+form ol.roman { list-style-type: upper-roman; }
+form input[type=number] { width: 5em; }

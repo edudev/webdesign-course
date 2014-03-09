@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Task 1</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<form>
+				<p class="right">Приложение към &#167;3</p>
+				<h1>Заявление - декларация</h1>
+
+					<p class="oneline">
+						<label for="name">От</label>
+						<input type="text" size="75" required="required" id="name" name="name">
+					</p>
+					<p class="oneline">
+						<label for="address">живущ</label>
+						<input type="text" size="75" required="required" id="address" name="address">
+					</p>
+					<p>
+						<label for="class">ученик от</label>
+						<select id="class" name="class">
+							<optgroup label="9 клас">
+								<option>9А</option>
+								<option>9Б</option>
+								<option>9В</option>
+								<option>9Г</option>
+							</optgroup>
+							<optgroup label="10 клас">
+								<option>10А</option>
+								<option>10Б</option>
+								<option>10В</option>
+								<option>10Г</option>
+							</optgroup>
+							<optgroup label="11 клас">
+								<option>11А</option>
+								<option>11Б</option>
+								<option>11В</option>
+								<option>11Г</option>
+							</optgroup>
+							<optgroup label="12 клас">
+								<option>12А</option>
+								<option>12Б</option>
+								<option>12В</option>
+								<option>12Г</option>
+							</optgroup>
+						</select>
+						<label for="class">клас в ТУЕС към ТУ-София</label>
+					</p>
+					<br>
+					<p>
+						<label for="period">Моля да ми бъде отпусната стипендия за</label>
+						<select id="period" name="period">
+							<option>първия учебен срок</option>
+							<option>втория учебен срок</option>
+						</select>
+					</p>
+
+				<h2>Декларирам</h2>
+
+				<ol class="roman">
+					<li>
+						<fieldset>
+							<legend>Успех</legend>
+							<p>
+								<label for="grade">Успех</label>
+								<input type="number" step="0.001" min="5.500" max="6.000" id="grade" name="grade">
+								<label for="lastPeriod">От</label>
+								<select id="lastPeriod" name="lastPeriod">
+									<option>предходния срок</option>
+									<option>предходната година</option>
+								</select>
+							</p>
+						</fieldset>
+					</li>
+					<li>
+						<fieldset>
+							<legend>Семейно положение</legend>
+							<ol>
+								<li>
+									<p class="oneline">
+										<label for="father">Баща</label>
+										<input type="text" size="75" id="father" name="father">
+									</p>
+									<p class="right">
+										<label for="fatherAddress">живущ</label>
+										<input type="text" size="30" id="fatherAddress" name="fatherAddress">
+										<label for="fatherWork">, работи в</label>
+										<input type="text" size="30" id="fatherWork" name="fatherWork">
+									</p>
+								</li>
+								<li>
+									<p class="oneline">
+										<label for="mother">Майка</label>
+										<input type="text" size="75" id="mother" name="mother">
+									</p>
+									<p class="right">
+										<label for="motherAddress">живуща</label>
+										<input type="text" size="30" id="motherAddress" name="motherAddress">
+										<label for="motherWork">, работи в</label>
+										<input type="text" size="30" id="motherWork" name="motherWork">
+									</p>
+								</li>
+								<li>
+									<p class="oneline">
+										<label for="brother">Брат</label>
+										<input type="text" size="75" id="brother" name="brother">
+									</p>
+									<p class="right">
+										<label for="brotherAddress">живущ</label>
+										<input type="text" size="30" id="brotherAddress" name="brotherAddress">
+										<label for="brotherWork">, работи в</label>
+										<input type="text" size="30" id="brotherWork" name="brotherWork">
+									</p>
+								</li>
+								<li>
+									<p class="oneline">
+										<label for="sister">Сестра</label>
+										<input type="text" size="75" id="sister" name="sister">
+									</p>
+									<p class="right">
+										<label for="sisterAddress">живуща</label>
+										<input type="text" size="30" id="sisterAddress" name="sisterAddress">
+										<label for="sisterWork">, работи в</label>
+										<input type="text" size="30" id="sisterWork" name="sisterWork">
+									</p>
+								</li>
+							</ol>
+						</fieldset>
+					</li>
+					<li>
+						<fieldset>
+							<legend>Материално положение</legend>
+							<p>
+								<label for="incomePeriod">Доходите на семейството ми, получени през периода</label>
+								<select id="incomePeriod" name="incomePeriod">
+									<option>от януари до юни</option>
+									<option>от февруари до юли</option>
+									<option>от март до август</option>
+									<option>от април до септември</option>
+									<option>от май до октомври</option>
+									<option>от юни до ноември</option>
+									<option>от юли до декември</option>
+									<option>от август до януари</option>
+									<option>от септември до февруари</option>
+									<option>от октомври до март</option>
+									<option>от ноември до април</option>
+									<option>от декември до май</option>
+								</select>
+								<label for="incomePeriod">са:</label>
+							</p>
+							<ol>
+								<li class="oneline">
+									<label for="contractIncome">Доходи от трудови договори:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="contractIncome" name="contractIncome">
+										<label for="contractIncome">лв.</label>
+									</span>
+								</li>
+								<li class="oneline">
+									<label for="pensionIncome">Доходи от пенсии:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="pensionIncome" name="pensionIncome">
+										<label for="pensionIncome">лв.</label>
+									</span>
+								</li>
+								<li>
+									<p class="oneline">
+										<label for="compensationsIncome">Обезщетения и помощи по реда на Кодекса за социално осигуряване:</label>
+										<span>
+											<input type="number" step="0.01" min="0.00" max="3000.00" id="compensationsIncome" name="compensationsIncome">
+											<label for="compensationsIncome">лв.</label>
+										</span>
+									</p>
+									<p class="description">/Без еднократните помощи/</p>
+								</li>
+								<li class="oneline">
+									<label for="aidIncomeChildren">Месечни помощи и добавки по реда на Закона за семейните помощи за деца:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="aidIncomeChildren" name="aidIncomeChildren">
+										<label for="aidIncomeChildren">лв.</label>
+									</span>
+								</li>
+								<li class="oneline">
+									<label for="aidIncomeSocial">Месечни помощи по реда за социално подпомагане:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="aidIncomeSocial" name="aidIncomeSocial">
+										<label for="aidIncomeSocial">лв.</label>
+									</span>
+								</li>
+								<li class="oneline">
+									<label for="scholarshipsIncome">Стипендии:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="scholarshipsIncome" name="scholarshipsIncome">
+										<label for="scholarshipsIncome">лв.</label>
+									</span>
+								</li>
+								<li class="oneline">
+									<label for="rentalIncome">Наеми:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="rentalIncome" name="rentalIncome">
+										<label for="rentalIncome">лв.</label>
+									</span>
+								</li>
+								<li class="oneline">
+									<label for="feesIncome">Хонорари:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="feesIncome" name="feesIncome">
+										<label for="feesIncome">лв.</label>
+									</span>
+								</li>
+								<li class="oneline">
+									<label for="otherIncome">Други доходи:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="otherIncome" name="otherIncome">
+										<label for="otherIncome">лв.</label>
+									</span>
+								</li>
+							</ol>
+							<p class="oneline">
+								<p class="right">
+									<label for="fullIncome">Всичко:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="fullIncome" name="fullIncome">
+										<label for="fullIncome">лв.</label>
+									</span>
+								</p>
+								<p class="right">
+									<label for="incomePerMember">Месечен доход на член от семейството:</label>
+									<span>
+										<input type="number" step="0.01" min="0.00" max="3000.00" id="incomePerMember" name="incomePerMember">
+										<label for="incomePerMember">лв.</label>
+									</span>
+								</p>
+							<p>
+						</fieldset>
+					</li>
+				</ol>
+
+				<p>Известно ми е, че за вписване на неверни данни в тази декларация нося отговорност по чл. 313 от Наказателния кодекс и получената неправомерно стипендия подлежи на връщане.</p>
+
+				<p>
+					<label for="extra">Прилагам:</label>
+					<input type="file" multiple="multiple" id="extra" name="extra">
+				</p>
+
+				<p class="right">
+					<input type="submit" value="Заяви">
+				</p>
+			</form>
+		</div>
+	</body>
+</html>
